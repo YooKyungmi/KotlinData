@@ -4,11 +4,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class UserProfile (
+data class UserProfile  (
     @PrimaryKey(autoGenerate = true)
-    val ampm: Boolean = false,
-    val time: String = "",
-    val date: String = "",
-    val power: Boolean = true
+    var ampm: Boolean = false,
+    var time: String = "",
+    var date: String = "",
+    var power: Boolean = true
 
     )
